@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(19, 31, 37);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: floralwhite;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+.in-progress-icon {
+    position: fixed;
+    margin: 10px 5px;
+    width: 40px;
+}
+
+.in-progress-label {
+    display: none;
+    background: -webkit-linear-gradient(rgb(170, 253, 227), rgb(119, 237, 255));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    font-size: 1em;
+    margin: 1.4em 3.8em;
+}
+
+.in-progress-icon:hover + .in-progress-label {
+    display: block;
+}
+
+.header-container {
+    /* color: rgb(116, 191, 222); */
+    color: rgb(31, 106, 138);
+    /* color: aliceblue; */
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    margin: 10vw auto;
+    text-align: center;
+    width: 100%;
+}
+
+.header-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 4vw;
+}
+
+.header-subtitle {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.5vw;
+}
+
+.header-bg-img {
+    width: 100%;
+    margin: 0;
+}
+
+.element-box {
+    text-align: center;
+    margin: 150px;
+    padding: 100px 0;
+}
+
+.about-me-text {
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(77, 181, 233);
+    margin: 100px;
+    padding: 30px;
+    width: 40%;
+}
+
+.about-me-statement {
+    color: rgb(196, 222, 240);
+}
+
+.bug-img {
+    position: absolute;
+    width: 50px;
+}
+
+.pillar-img {
+    position: absolute;
+    width: 50px;
+}
+
+.attribution {
+    color: floralwhite;
+    font-size: 0.8em;
+    margin: 10px;
+    text-decoration: none;
+}

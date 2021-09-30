@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(16, 26, 31);
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Title Section */
+
+.title-box {
+    --x: 50%;
+    --y: 50%;
+
+	background: linear-gradient(rgb(18, 20, 22), rgb(18, 20, 22)) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
+    border: 2px solid transparent;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    color: aliceblue;
+}
+
+/* Quote Section */
+
+#quote {
+    text-align: center;
+}
+
+.quote-bar {
+    background-color: rgba(240, 248, 255, 0.068);
+}
+
+.quote-text {
+    color: #d5d5d5;
+    font-family: 'Khula', sans-serif;
+    margin-bottom: 0;
+}
+
+.quote-icon {
+    width: 70px;
+    position: relative;
+}
+
+.quote-left-icon {
+    margin-right: 60%;
+    padding-top: 1.5%;
+}
+
+.quote-right-icon {
+    margin-left: 60%;
+    padding-bottom: 1.5%;
+}
+
+/* Navbar Section */
+
+#navigationBar {
+    background-color: rgb(16, 26, 31);
+    padding: 1.5% 0;
+    /* margin-top: 3%; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-tabs .nav-item .nav-link {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1px solid gold;
+}
+
+.nav-tabs .nav-item .nav-link:active {
+    border-bottom: 0.8px solid gold;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+/* Home Section */
+
+#home {
+    padding: 7% 5%;
+    text-align: center;
+}
+
+.section-heading {
+    text-align: left;
+    padding-left: calc(1.67% + 12px);
+    margin-top: 20%;
+}
+
+.about-me-card {
+    background-color: rgba(240, 248, 255, 0.014);
+    font-family: 'Exo 2', sans-serif;
+    line-height: 2;
+    margin: 7% 5%;
+    padding: 10% 9%;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.about-me-card:hover {
+    background-color: rgba(240, 248, 255, 0.068);
+    cursor: default;
+}
+
+.about-me-card:hover .about-me-card-heading span {
+    border-bottom: 0.2px solid gold;
+}
+
+.about-me-card-heading {
+    margin-bottom: 5%;
+}
+
+.about-me-card-heading, .about-me-card-heading-span {
+    padding: 3% 0;
+}
+
+.leading-icon-background {
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+.about-me-card:hover .leading-icon-background {
+    background-color: aliceblue;
+}
+
+.leading-icon {
+    width: 50px;
+}
+
+.about-me-card:hover .leading-icon {
+    width: 55px;
+}
