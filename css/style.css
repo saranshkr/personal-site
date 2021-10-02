@@ -7,14 +7,28 @@ body {
 /* Title Section */
 
 .title-box {
-    --x: 50%;
-    --y: 50%;
+	background: linear-gradient(rgb(18, 20, 22), rgb(18, 20, 22)) padding-box, radial-gradient(farthest-corner at 50% 50%, #00C9A7, #845EC2) border-box;
+    border: 5px solid transparent;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
 
-	background: linear-gradient(rgb(18, 20, 22), rgb(18, 20, 22)) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
-    border: 2px solid transparent;
-    border-top-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-    color: aliceblue;
+.title {
+    font-family: 'Sacramento', cursive;
+    font-size: 6vw;
+}
+
+.subtitle {
+    font-family: 'Josefin Slab', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.3rem;
+    line-height: 2;
+}
+
+@media (max-width: 810px) {
+    .title {
+        font-size: calc(0.06 * 810px);
+    }    
 }
 
 /* Quote Section */
@@ -29,7 +43,9 @@ body {
 
 .quote-text {
     color: #d5d5d5;
-    font-family: 'Khula', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
     margin-bottom: 0;
 }
 
@@ -125,12 +141,27 @@ body {
 
 .about-me-card:hover .leading-icon-background {
     background-color: aliceblue;
+    /* border: 0.5rem double transparent; */
 }
 
 .leading-icon {
-    width: 50px;
+    width: 45px;
 }
 
 .about-me-card:hover .leading-icon {
-    width: 55px;
+    width: 50px;
+}
+
+/* Skills Section */
+
+#skills {
+    padding: 7% 5%;
+}
+
+.skills-paragraph {
+    padding: 0 calc(1.67% + 12px);
+    /* font-size: 25px; */
+    /* line-height: 1.5; */
+    margin: 0 0 7%;
+    letter-spacing: 0.05rem;
 }
