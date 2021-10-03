@@ -46,7 +46,6 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.07rem;
-    margin-bottom: 0;
 }
 
 .quote-icon {
@@ -89,6 +88,10 @@ body {
 
 .nav-tabs {
     border: none;
+}
+
+.navbar-text {
+    margin-left: 2%;
 }
 
 /* Home Section */
@@ -155,13 +158,40 @@ body {
 /* Skills Section */
 
 #skills {
-    padding: 7% 5%;
+    line-height: 1.5;
+    padding: 7% calc(6.67% + 12px);
+}
+
+.skill-div {
+    margin-bottom: 10%;
+}
+
+.skills-heading-subtext {
+    color: rgba(240, 248, 255, 0.626);
 }
 
 .skills-paragraph {
-    padding: 0 calc(1.67% + 12px);
-    /* font-size: 25px; */
-    /* line-height: 1.5; */
-    margin: 0 0 7%;
     letter-spacing: 0.05rem;
+}
+
+/* Footer Section */
+
+.footer-note {
+    margin-top: 10%;
+    letter-spacing: 0.2rem;
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.544);
+}
+
+.attribution {
+    font-size: 0.8vw;
+}
+
+.attribution a {
+    color: rgb(100, 184, 214);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
 }
