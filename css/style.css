@@ -105,6 +105,7 @@ body {
     text-align: left;
     padding-left: calc(1.67% + 12px);
     margin-top: 20%;
+    margin-bottom: 2%;
 }
 
 .about-me-card {
@@ -142,28 +143,35 @@ body {
     transition-duration: 0.4s;
 }
 
-.about-me-card:hover .leading-icon-background {
-    background-color: aliceblue;
-    /* border: 0.5rem double transparent; */
-}
+/* .about-me-card:hover .leading-icon-background { */
+    /* background: radial-gradient(rgba(240, 248, 255, 0.068), rgb(16, 26, 31)); */
+    /* border: 0.2rem solid aliceblue; */
+/* } */
 
 .leading-icon {
-    width: 45px;
+    width: 50px;
 }
 
 .about-me-card:hover .leading-icon {
-    width: 50px;
+    width: 55px;
 }
 
 /* Skills Section */
 
 #skills {
     line-height: 1.5;
-    padding: 7% calc(6.67% + 12px);
+    padding: 7% 5%;
+}
+
+.skill-icon {
+    width: 50px;
 }
 
 .skill-div {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    margin-left: calc(1.67% + 12px);
+    padding: 3%;
+    border-left: 2px solid gold;
 }
 
 .skills-heading-subtext {
@@ -184,7 +192,7 @@ body {
 }
 
 .attribution {
-    font-size: 0.8vw;
+    font-size: 0.7rem;
 }
 
 .attribution a {
