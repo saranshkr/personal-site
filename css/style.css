@@ -168,7 +168,8 @@ body {
 }
 
 .skill-div {
-    margin-bottom: 15%;
+    margin-top: 7%;
+    margin-bottom: 14%;
     margin-left: calc(1.67% + 12px);
     padding: 3%;
     border-left: 2px solid gold;
@@ -180,6 +181,12 @@ body {
 
 .skills-paragraph {
     letter-spacing: 0.05rem;
+}
+
+/* Contact Section */
+
+#contact {
+    padding: 7% 5%;
 }
 
 /* Footer Section */
