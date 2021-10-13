@@ -68,6 +68,7 @@ body {
 #navigationBar {
     background-color: rgb(16, 26, 31);
     padding: 1.5% 0;
+    z-index: 1;
 }
 
 .sticky {
