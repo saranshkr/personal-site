@@ -115,12 +115,13 @@ body {
     margin: 7% 5%;
     padding: 10% 9%;
     border-radius: 20px;
-    transition-duration: 0.4s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .about-me-card:hover {
     background-color: rgba(240, 248, 255, 0.068);
     cursor: default;
+    transform: scale(1.1);
 }
 
 .about-me-card:hover .about-me-card-heading span {
@@ -140,20 +141,10 @@ body {
     padding: 1rem;
     margin-bottom: 5%;
     border-radius: 50%;
-    transition-duration: 0.4s;
 }
-
-/* .about-me-card:hover .leading-icon-background { */
-    /* background: radial-gradient(rgba(240, 248, 255, 0.068), rgb(16, 26, 31)); */
-    /* border: 0.2rem solid aliceblue; */
-/* } */
 
 .leading-icon {
     width: 50px;
-}
-
-.about-me-card:hover .leading-icon {
-    width: 55px;
 }
 
 /* Skills Section */
