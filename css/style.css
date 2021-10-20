@@ -181,6 +181,10 @@ body {
     padding: 7% 5% 0;
 }
 
+.project-content {
+    padding-left: 1.67%;
+}
+
 /* Contact Section */
 
 #contact {
