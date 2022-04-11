@@ -77,22 +77,27 @@ body {
     width: 100%;
 }
 
-.nav-tabs .nav-item .nav-link {
-    background-color: transparent;
-    border: none;
-    border-bottom: 0.1px solid gold;
+.navbar-header .navbar-brand {
+    margin-bottom: 0;
 }
 
-.nav-tabs .nav-item .nav-link:active {
-    border-bottom-width: 2px;
+.nav-item a, .navbar-brand a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
-.nav-tabs {
-    border: none;
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .navbar-text {
     margin-left: 2%;
+}
+
+.nav-item.nav-item-active {
+    border-bottom: 2px inset gold;
+    transition: 0.3 ease all;
 }
 
 /* Home Section */
@@ -105,7 +110,7 @@ body {
 .section-heading {
     text-align: left;
     padding-left: calc(1.67% + 12px);
-    margin-top: 20%;
+    margin-top: 5%;
     margin-bottom: 2%;
 }
 

@@ -66,35 +66,23 @@
         <section id="navigationBar">
             <nav class="navbar navbar-expand-sm navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Saransh Kumar</a>
+                    <div class="navbar-header">
+                        <p class="navbar-brand"><a href="#">Saransh Kumar</a></p>
+                    </div>
                     <div class="navbar-text">Site under construction</div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation bar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="nav-tabs collapse navbar-collapse justify-content-end" id="navItems">
-                        <div class="navbar-nav nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">Home</button>
-                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
-                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#" role="tab" aria-controls="projects" aria-selected="false">Projects</button>
-                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-                        </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navItems">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item" id="homeNav"><a href="#home">Home</a></li>
+                            <li class="nav-item" id="skillsNav"><a href="#skills">Skills</a></li>
+                            <li class="nav-item" id="projectsNav"><a href="#projects">Projects</a></li>       
+                            <li class="nav-item" id="contactNav"><a href="#contact">Contact</a></li>       
+                        </ul>
                     </div>
                 </div>
             </nav>
-            <!-- <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Saransh Kumar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation bar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="nav-tabs collapse navbar-collapse justify-content-end" id="navItems">
-                        <a class="nav-item nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                        <a class="nav-item nav-link" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
-                        <a class="nav-item nav-link" data-toggle="tab" href="#" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
-                        <a class="nav-item nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                    </div>
-                </div>
-            </nav> -->
         </section>
 
         <!-- Experiments in CodePly seem to suggest that I need JavaScript to render the navbar as I wish -->
@@ -328,6 +316,27 @@
                     navbar.style.display = "none";
                 }
             }
+
+            const sections = document.querySelectorAll("section");
+            const navItems = document.querySelectorAll(".nav li");
+
+            window.addEventListener("scroll", () => {
+                let currentSection = "";
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (window.pageYOffset >= sectionTop - 100) {
+                        currentSection = section.getAttribute("id");
+                    }
+                });
+
+                navItems.forEach(navItem => {
+                    navItem.classList.remove("nav-item-active");
+                    let navItemId = navItem.getAttribute("id");
+                    if (navItemId.startsWith(currentSection)) {
+                        navItem.classList.add("nav-item-active");
+                    }
+                });
+            });
         </script>
         
         <!-- Font Awesome -->
