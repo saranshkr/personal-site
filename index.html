@@ -197,7 +197,7 @@
             </div>
             <div class="skill-div">
                 <h6 class="skills-heading-subtext">
-                    HTML5, CSS, Bootstrap, Java EE, Basics of MVC, Hibernate, Learning Spring and Hybris
+                    HTML5, CSS, Bootstrap, JavaScript, Java EE, Spring MVC, Spring Boot, NodeJS, Express
                 </h6>
                 <h3 class="skills-heading">Web Design and Development</h3>
                 <p class="skills-paragraph">
@@ -258,7 +258,7 @@
                         I am currently working on adding more features like argument parsers for command line use and keyboard event handlers.
                     </p>
                 </div>
-                <div>
+                <div class="project-content">
                     <h3>Handwritten Digit Recognition</h3>
                     <p>
                         This was a play-around with the famous MNIST dataset of handwritten digits from 0-9.
@@ -324,7 +324,7 @@
                 let currentSection = "";
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
-                    if (window.pageYOffset >= sectionTop - 100) {
+                    if (window.pageYOffset >= sectionTop - 150) {
                         currentSection = section.getAttribute("id");
                     }
                 });
